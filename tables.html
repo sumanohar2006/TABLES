@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" cross origin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+      table,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+      } 
+    th{
+        padding: 10px;
+    }
+    td{
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+    div{
+        margin-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+    <div id="sectionindex">
+        <ol>
+            <li><a href="#" onclick="display('sectiontable1')">Time Table1</a></li>
+            <li><a href="#"onclick="display('sectiontable2')">Time Table2</a></li>
+            <li><a href="#" onclick="display('sectiontable3')">Time Table3</a></li>
+            <li><a href="#" onclick="display('sectiontable4')">compelete Time table Mon - fri</a></li>
+            <li><a href="#" onclick="display('sectiontable5')">Types of Chemical reactions</a></li>
+            <li><a href="#" onclick="display('sectiontable6')">Famous Formulas</a></li>
+            <li><a href="#" onclick="display('sectiontable7')">Chemical Reaction Timeline</a></li>
+        </ol>
+    </div>
+    <div id="sectiontable1">
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Room No</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Mathematics</td>
+            <td>9:00AM</td>
+            <td>10:00AM</td>
+            <td>101</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Physics</td>
+            <td>10:15AM</td>
+            <td>11:15AM</td>
+            <td>102</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Chemistry</td>
+            <td>9:00AM</td>
+            <td>10:00AM</td>
+            <td>103</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Biology</td>
+            <td>10:30AM</td>
+            <td>11:00AM</td>
+            <td>104</td>
+        </tr>
+    </table>
+    <p><a href="#"  onclick="display('sectionindex')">Back to Heading</a></p>
+    </div>
+    <div id="sectiontable2">
+        <table>
+            <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Room No</th>
+            </tr>
+            <tr>
+            <td rowspan="2">Monday</td>
+            <td>Mathematics</td>
+            <td>9:00AM</td>
+            <td>10:00AM</td>
+            <td>101</td>
+            </tr>
+            <tr>
+                <td colspan="2">Physics</td> 
+                <td>11:15AM</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tuesday</td>
+                <td>Chemistry</td>
+                <td>9:00AM</td>
+                <td>10:00AM</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td colspan="3">Pratical Lab</td>
+                <td>104</td>
+            </tr>
+        </table>
+        <a href="#"  onclick="display('sectionindex')">Back to Heading</a>
+    </div>
+
+    <div id="sectiontable3">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Room No</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td>Mathematics</td>
+                <td>9:00AM</td>
+                <td>10:00AM</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>10:15AM</td>
+                <td>11:15AM</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Chemistry</td>
+                <td>9:00AM</td>
+                <td>10:00AM</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Biology</td>
+                <td>10:30AM</td>
+                <td>11:00AM</td>
+                <td>104</td>
+            </tr>
+         </table>
+         <a href="#"  onclick="display('sectionindex')">Back to Heading</a>
+    </div>
+    <div id="sectiontable4">
+        <table>
+        <tr>
+            <td>Hours</td>
+            <td>1</td>
+            <td>2</td>
+            <td></td>
+            <td>3</td>
+            <td>4</td>
+            <td></td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>8:00-8:<br>30</td>
+            <td>8:30-9:<br>00</td>
+            <td>9:00-9:3<br>0</td>
+            <td>9:30-10:<br>30</td>
+            <td>10:30-12<br>:00</td>
+            <td>12:00-1:00</td>
+            <td>1:00-2:<br>00</td>
+            <td>3:00-4:00</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">Lab</td>
+            <td rowspan="5">BREAK</td>
+            <td>S1</td>
+            <td>S3</td>
+            <td rowspan="5">LUNCH BREAK</td>
+            <td>S3</td>
+            <td>S4</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>S4</td>
+            <td>S3</td>
+            <td>S2</td>
+            <td>S1</td>
+            <td colspan="2">LAB</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">Lab</td>
+            <td>S3</td>
+            <td>S2</td>
+            <td>S1</td>
+            <td>S4</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="2">SPORTS</td>
+            <td>S4</td>
+            <td>S1</td>
+            <td>S2</td>
+            <td>S3</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>S4</td>
+            <td>S3</td>
+            <td>S2</td>
+            <td>S1</td>
+            <td colspan="2">CLUBS</td>
+        </tr>
+    </table>
+    <a href="#"  onclick="display('sectionindex')">Back to Heading</a>
+    </div>
+
+    <div id="sectiontable5">
+        <table>
+            <tr>
+                <th>Reaction Name</th>
+                <th>Reactants</th>
+                <th>Products</th>
+                <th>Reaction Type</th>
+            </tr>
+       
+        <tr>
+            <td>Combustion of Methane</td>
+            <td>CH₄+2O₂</td>
+            <td>CO₂+2H₂O</td>
+            <td style="text-decoration: underline;">Exothermic</td>
+        </tr>
+        <tr>
+            <td>Replacement of Methane</td>
+            <td>Zn+<strike>HCL</strike>(Replaced)</td>
+            <td>ZnCl₂+H₂</td>
+            <td>Single Replacement</td>
+        </tr>
+        <tr>
+            <td>Combustion of Methane</td>
+            <td>CH₄+2O₂</td>
+            <td>Na₂So₄+2NaOH</td>
+            <td>ACid-Base</td>
+        </tr>
+        </table>
+        <a href="#"  onclick="display('sectionindex')">Back to Heading</a>
+    </div>
+    
+    <div id="sectiontable6">
+        <table>
+            <tr>
+                <th>Formula Name</th>
+                <th>Equation</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                    <td>Pythagorean Theorem</td>
+                    <td>a<sup>2</sup>+ b<sup>2</sup>=c<sup>2</sup></td>
+                    <td>Desctibes the relationship between the sides of a <bold>right triangle</bold>, where <span style="text-decoration: underline;">c</span> is the hypotenuse</td>
+            </tr>
+            <tr>
+                <td>Quadratic Formula</td>
+                <td>x=(-b&plusmn;&radii;(b<sup>2</sup>-4ac))/2a</td>
+                <td>Used to find the roots of a Quadratic Equation: ax<sup>2</sup>+bx+c=0.</td>
+            </tr>
+            <tr>
+                <td>Newton's Second Law</td>
+                <td>F = ma</td>
+                <td>States that force(F) is the product of mass(m) and acceleration(a).</td>
+            </tr>
+            <tr>
+                <td>Area of a Circle</td>
+                <td>A = &#8508;r<sup>2</sup></td>
+                <td>Represents the area(A) of a circle with radius r.</td>
+            </tr>
+            <tr>
+                <td>Einstein's Mass Energy Equivalence</td>
+                <td>E = mc<sup>2</sup></td>
+                <td>Relates energy(E) to mass(m) and the speed of light(c). One of the most <span style="text-decoration: underline; font-weight: bold;">famous formulas</span> in Physics.</td>
+            </tr>
+        </table>
+        <a href="#"  onclick="display('section index')">Back to Heading</a>
+    </div>
+<div id="sectiontable7">
+    <p style="font-size: 26px; font-weight: bold;">Chemical Reaction Timeline</p>
+    <ol>
+        <li>
+            <p><span style="font-weight: bold;">Reaction</span>: Combustion of Hydrogen</p>
+            <p>2H<sub>2</sub> + O<sub>2</sub>&rarr;2H<sub>2</sub>O</p>
+            <p><span style="text-decoration: underline;">Explanation</span>: This reaction releases energy as water(2H<sub>2</sub> + O<sub>2</sub>) is formed. It is an <span style="font-weight: bold;">exothermic reaction</span>, meaning it releases heat.</p>
+        </li>
+        <li>
+            <p><span style="font-weight: bold;">Reaction</span>: Dissociation of Water</p>
+            <p>2H<sub>2</sub> + O<sub>2</sub>&rarr;H<sup>+</sup>+OH<sup>-</sup></p>
+            <p><span style="text-decoration: underline;">Explanation</span>: Water dissociates into hydrogen ions(H<sup>+</sup>) and hydroxide ions(OH<sub>-</sub>). This process is essential in <span style="font-weight: bold;">acid - base Chemistry</span>.</p>
+        </li>
+        <li>
+            <p><span style="font-weight: bold;">Reaction</span>: Synthesis of Ammonia(HAber Process)</p>
+            <p><strike>N<sub>2</sub> + H<sub>2</sub>&rarr;NH<sub>3</sub></strike>(Incorrect Stoichiometry)</p>
+            <p>Corrected: N<sub>2</sub> + 3H<sub>2</sub>&rarr;2NH<sub>3</sub></p>
+            <p><span style="text-decoration: underline;">Explanation</span>: This reaction combines nitrogen(N<sub>2</sub>) and hydrogen(H<sub>2</sub>) to form ammonia(NH<sub>3</sub>). It requires a high temperature and pressure.</p>
+        </li>
+    </ol>
+    <a href="#"  onclick="display('sectionindex')">Back to Heading</a>
+</div>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
